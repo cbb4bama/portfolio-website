@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/scripts.js"></script>	
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta charset="UTF-8" />
@@ -14,6 +16,8 @@
 	<div></div>
 	<nav>
 		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+			<img class="logo" src="img/logo.svg" alt="John Doe UX UI logo" >|
 			<picture class="logo">
 				<source srcset='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' media='(min-width: 100px)' type='image/jpeg'>
 				<img src='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' alt='Description of the first image'>
@@ -23,10 +27,11 @@
             <li><a href="home.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#Contact">Contact</a></li>
+			<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
     </nav>
 	<main id="main">
-		<div class="container">
+		<div class="container">S
             <div>
                 <div><picture>
 					<source srcset='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' media='(min-width: 100px)' type='image/jpeg'>
@@ -44,7 +49,9 @@
                 </p>
         </div>
 	</main>
-	<body></body>
+	<body>
+		<script src="js/scripts.js"></script>
+	</body>
 	<footer id="Contact">
 		<div class="container">
 			<h3>Get in Touch</h3>
