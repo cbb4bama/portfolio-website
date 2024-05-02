@@ -7,6 +7,7 @@ White: #ffffff
 img {
     max-width: 100%;
     height: auto; 
+    width: 50px;
   }
   a {
     color: #746cdc;
@@ -52,9 +53,7 @@ nav {
     color: white;
     margin: 0px;
     border-bottom: 3px solid #4a4a4a;
-    box-shadow:  /*start ------------*/
-    width: [object Object]px; 
-    height: [object Object]px; 
+  
     background: #F8F8F8; 
     border: solid #BDBDBD 1px; 
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
@@ -155,8 +154,10 @@ Medium devices (640px and larger)
 
   nav {
     width: auto;
-    float: right;
     margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
   }
   .col-md-6 {
     width: 50%;
