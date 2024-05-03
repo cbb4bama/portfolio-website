@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/fe992e6f38.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/scripts.js"></script>   
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -13,23 +14,31 @@
     <title>Canaan's Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <div class="navtoggle" id="myNavtoggle">
-            <nav>
-        <div>
-                <picture class="logo">
-                    <source srcset='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' media='(min-width: 100px)' type='image/jpeg'>
-                    <img src='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' alt='Description of the first image'>
-            </picture>
-        </div>
-        <ul class="navigation">
-            <li><a href="home.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#Contact">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
-        </ul>
-    </nav>
-
+    <header>
+		<div class="container">
+			<div class="navtoggle" id="myNavtoggle">
+				<nav>
+                    <picture class="logo">
+                        <source srcset='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' media='(min-width: 100px)' type='image/jpeg'>
+                        <img src='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' alt='Description of the first image'>
+                    </picture>
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#Contact">Contact</a></li>
+						<li>
+              <a href="#contact" onclick="menuToggle()">Contact</a>
+            </li>
+						<li>
+              <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <i class="fas fa-bars"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
     <main id="main">
         <div class="container"><h1>Hi, My name is Canaan Brown</h1></div>
         <div><p>I am a UX Designer from Alabama</p></div>
@@ -39,17 +48,17 @@
         <div class="container">
             <h2 class="center">My Work</h2>
             <div class="row">
+                <picture>
+                    <source srcset='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' media='(min-width: 100px)' type='image/jpeg'>
+                    <img src='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' alt='Description of the second image'>
+                </picture>
                 <div class="col-md-6 col-lg-7">
+                    </div>
                     <div class="col-md-6 col-lg-5">
+                        <h3>Expert</h3>
+                        <p>Expert is an app which connects users to professionals (or "Experts") in virtually any field with ease.</p>
+                        <a href="expert.html" class="button">View Case Study</a>
                     </div>
-                        <picture>
-                            <source srcset='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' media='(min-width: 100px)' type='image/jpeg'>
-                            <img src='https://cdn.myportfolio.com/d637ae92-5b35-4547-9705-09c69ebe8b02/1571571f-53a0-480a-8a39-f1a6306684ed_rw_1200.png?h=02f91f2dc36cba75acb8ecda746f42b6' alt='Description of the second image'>
-                        </picture>
-                    </div>
-                    <h3>Expert</h3>
-                    <p>Expert is an app which connects users to professionals (or "Experts") in virtually any field with ease.</p>
-                    <a href="expert.html" class="button">View Case Study</a>
                 </div>
             </div>
         </div>
@@ -668,10 +677,10 @@
 </body>
 <footer id="Contact">
     <div class="container">
-        <h3>Get in Touch</h3>
-        <p>Contact me by phone at <a href="tel:2057655623">205-765-5623</a> or by email below.</p>
     </div>
     <div>
+        <h3>Get in Touch</h3>
+        <p>Contact me by phone at <a href="tel:2057655623">205-765-5623</a> or by email below.</p>
         <a href="mailto:cbb4bama@gmail.com" class="button contact">Send me an email</a>
         <div>
             <p>Copyright Canaan Brown 2024</p>

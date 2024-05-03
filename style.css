@@ -142,18 +142,52 @@ h4 {
 #main span {
   display: block;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
+/* our hamburger menu */
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
 }
-.navtoggle li:not(:last-child) {
-  display: none;
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
 }
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+{
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #E9E9E9;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo {
+  max-width: 150px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.5em;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -184,12 +218,13 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
-}
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 /* ==============================
 Large devices (1024px or larger)
